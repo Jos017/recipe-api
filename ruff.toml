@@ -1,0 +1,14 @@
+# Rules applied
+select = [
+  "F",
+  "E",
+  "W",
+  "I",
+  "N",
+  "D",
+  "DJ"
+]
+
+
+[format]
+quote-style="single"
