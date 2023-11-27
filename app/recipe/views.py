@@ -49,7 +49,11 @@ class TagViewSet(
         return self.queryset.filter(user=self.request.user).order_by('name')
 
 
-class IngredientViewSet(mixins.ListModelMixin, viewsets.GenericViewSet):
+class IngredientViewSet(
+    mixins.UpdateModelMixin,
+    mixins.ListModelMixin,
+    viewsets.GenericViewSet,
+):
     """View for manage ingredients APIs."""
 
     serializer_class = serializers.IngredientSerializer
